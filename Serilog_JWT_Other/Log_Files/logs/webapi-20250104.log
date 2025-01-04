@@ -1,0 +1,41 @@
+2025-01-04 22:45:48.306 +08:00  INF  Now listening on: https://localhost:7197
+2025-01-04 22:45:48.327 +08:00  INF  Now listening on: http://localhost:5122
+2025-01-04 22:45:48.360 +08:00  INF  Application started. Press Ctrl+C to shut down.
+2025-01-04 22:45:48.360 +08:00  INF  Hosting environment: Development
+2025-01-04 22:45:48.360 +08:00  INF  Content root path: C:\Users\User\source\repos\Serilog_JWT_Other\Serilog_JWT_Other
+2025-01-04 22:45:49.381 +08:00  INF  Request starting HTTP/2 GET https://localhost:7197/swagger - null null
+2025-01-04 22:45:49.505 +08:00  INF  Request finished HTTP/2 GET https://localhost:7197/swagger - 301 0 null 130.0003ms
+2025-01-04 22:45:49.508 +08:00  INF  Request starting HTTP/2 GET https://localhost:7197/swagger/index.html - null null
+2025-01-04 22:45:49.558 +08:00  INF  Request finished HTTP/2 GET https://localhost:7197/swagger/index.html - 200 null text/html;charset=utf-8 49.8775ms
+2025-01-04 22:45:49.573 +08:00  INF  Request starting HTTP/2 GET https://localhost:7197/swagger/swagger-ui.css - null null
+2025-01-04 22:45:49.573 +08:00  INF  Request starting HTTP/2 GET https://localhost:7197/swagger/swagger-ui-bundle.js - null null
+2025-01-04 22:45:49.575 +08:00  INF  Request starting HTTP/2 GET https://localhost:7197/swagger/swagger-ui-standalone-preset.js - null null
+2025-01-04 22:45:49.576 +08:00  INF  Request starting HTTP/2 GET https://localhost:7197/_vs/browserLink - null null
+2025-01-04 22:45:49.576 +08:00  INF  Request starting HTTP/2 GET https://localhost:7197/_framework/aspnetcore-browser-refresh.js - null null
+2025-01-04 22:45:49.589 +08:00  INF  Request finished HTTP/2 GET https://localhost:7197/_framework/aspnetcore-browser-refresh.js - 200 13770 application/javascript; charset=utf-8 12.5973ms
+2025-01-04 22:45:49.612 +08:00  INF  Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2025-01-04 22:45:49.612 +08:00  INF  Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2025-01-04 22:45:49.612 +08:00  INF  Request finished HTTP/2 GET https://localhost:7197/swagger/swagger-ui-standalone-preset.js - 200 230280 text/javascript 36.6446ms
+2025-01-04 22:45:49.612 +08:00  INF  Request finished HTTP/2 GET https://localhost:7197/swagger/swagger-ui.css - 200 152034 text/css 38.964ms
+2025-01-04 22:45:49.627 +08:00  INF  Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2025-01-04 22:45:49.627 +08:00  INF  Request finished HTTP/2 GET https://localhost:7197/swagger/swagger-ui-bundle.js - 200 1456926 text/javascript 54.1714ms
+2025-01-04 22:45:49.642 +08:00  INF  Request finished HTTP/2 GET https://localhost:7197/_vs/browserLink - 200 null text/javascript; charset=UTF-8 66.2654ms
+2025-01-04 22:45:49.745 +08:00  INF  Request starting HTTP/2 GET https://localhost:7197/swagger/favicon-32x32.png - null null
+2025-01-04 22:45:49.746 +08:00  INF  Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2025-01-04 22:45:49.746 +08:00  INF  Request finished HTTP/2 GET https://localhost:7197/swagger/favicon-32x32.png - 200 628 image/png 0.9237ms
+2025-01-04 22:45:49.778 +08:00  INF  Request starting HTTP/2 GET https://localhost:7197/swagger/v1/swagger.json - null null
+2025-01-04 22:45:49.840 +08:00  INF  Request finished HTTP/2 GET https://localhost:7197/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 62.2417ms
+2025-01-04 22:45:55.356 +08:00  INF  Request starting HTTP/2 GET https://localhost:7197/WeatherForecast/LoggingTest - null null
+2025-01-04 22:45:55.360 +08:00  INF  Executing endpoint 'Serilog_JWT_Other.Controllers.WeatherForecastController.LogTest (Serilog_JWT_Other)'
+2025-01-04 22:45:55.373 +08:00  INF  Route matched with {action = "LogTest", controller = "WeatherForecast"}. Executing controller action with signature Void LogTest() on controller Serilog_JWT_Other.Controllers.WeatherForecastController (Serilog_JWT_Other).
+2025-01-04 22:45:55.375 +08:00  INF  GetCloList executing ...
+2025-01-04 22:45:55.378 +08:00  INF  Executed action Serilog_JWT_Other.Controllers.WeatherForecastController.LogTest (Serilog_JWT_Other) in 2.355ms
+2025-01-04 22:45:55.378 +08:00  INF  Executed endpoint 'Serilog_JWT_Other.Controllers.WeatherForecastController.LogTest (Serilog_JWT_Other)'
+2025-01-04 22:45:55.378 +08:00  INF  Request finished HTTP/2 GET https://localhost:7197/WeatherForecast/LoggingTest - 200 0 null 22.8091ms
+2025-01-04 22:45:58.761 +08:00  INF  Request starting HTTP/2 GET https://localhost:7197/WeatherForecast/LoggingTest - null null
+2025-01-04 22:45:58.761 +08:00  INF  Executing endpoint 'Serilog_JWT_Other.Controllers.WeatherForecastController.LogTest (Serilog_JWT_Other)'
+2025-01-04 22:45:58.761 +08:00  INF  Route matched with {action = "LogTest", controller = "WeatherForecast"}. Executing controller action with signature Void LogTest() on controller Serilog_JWT_Other.Controllers.WeatherForecastController (Serilog_JWT_Other).
+2025-01-04 22:45:58.762 +08:00  INF  GetCloList executing ...
+2025-01-04 22:45:58.762 +08:00  INF  Executed action Serilog_JWT_Other.Controllers.WeatherForecastController.LogTest (Serilog_JWT_Other) in 0.1479ms
+2025-01-04 22:45:58.762 +08:00  INF  Executed endpoint 'Serilog_JWT_Other.Controllers.WeatherForecastController.LogTest (Serilog_JWT_Other)'
+2025-01-04 22:45:58.762 +08:00  INF  Request finished HTTP/2 GET https://localhost:7197/WeatherForecast/LoggingTest - 200 0 null 1.2371ms

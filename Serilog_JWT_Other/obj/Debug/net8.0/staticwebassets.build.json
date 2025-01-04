@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "rNYDRcLk6I8y7a7+O7riclImy3+OUEgxbyiW8Untnv8=",
+  "Source": "Serilog_JWT_Other",
+  "BasePath": "_content/Serilog_JWT_Other",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

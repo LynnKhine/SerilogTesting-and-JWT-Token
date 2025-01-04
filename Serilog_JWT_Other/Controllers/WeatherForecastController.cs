@@ -1,4 +1,8 @@
+
+
+using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
+using System.Reflection.Metadata.Ecma335;
 
 namespace Serilog_JWT_Other.Controllers
 {
@@ -23,11 +27,21 @@ namespace Serilog_JWT_Other.Controllers
         {
             return Enumerable.Range(1, 5).Select(index => new WeatherForecast
             {
+                
                 Date = DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
                 TemperatureC = Random.Shared.Next(-20, 55),
                 Summary = Summaries[Random.Shared.Next(Summaries.Length)]
             })
             .ToArray();
+        }
+
+        [HttpGet]
+        [Route("LoggingTest")]
+
+        public void LogTest()
+        {
+            _logger.LogInformation("GetCloList executing ...");
+
         }
     }
 }
