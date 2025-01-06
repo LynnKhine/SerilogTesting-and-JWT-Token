@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Serilog_JWT_Other.Models.Author;
 using Serilog_JWT_Other.Services;
+using System.Text.Json;
 
 namespace Serilog_JWT_Other.Controllers
 {
@@ -10,16 +11,21 @@ namespace Serilog_JWT_Other.Controllers
     public class AuthorController : Controller
     {
         private readonly AuthorService _service;
+        private readonly ILogger<AuthorController> _logger;
 
-        public AuthorController(AuthorService service)
+        public AuthorController(AuthorService service, ILogger<AuthorController> logger)
         {
             _service = service;
+            _logger = logger;
         }
 
         [HttpPost]
         [Route("CreateAuthor")]
         public IActionResult CreateAuthor(CreateAuthorRequestModel model)
         {
+            _logger.LogInformation("CreateAuthor executing ....");
+            _logger.LogInformation("Request: " + JsonSerializer.Serialize(model));
+
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
@@ -42,7 +48,12 @@ namespace Serilog_JWT_Other.Controllers
             catch (Exception ex)
             {
                 var message = ex.Message;
+                _logger.LogError("Error Response Catch: " + JsonSerializer.Serialize(ex));
                 return BadRequest(message);
+            }
+            finally
+            {
+                _logger.LogInformation("CreateAuthor Finished ...");
             }
 
         }
@@ -52,6 +63,8 @@ namespace Serilog_JWT_Other.Controllers
 
         public IActionResult GetAuthorByIdHttpGet(string id)
         {
+            _logger.LogInformation("GetAuthorById with HttpGet executing ....");
+            _logger.LogInformation("Request: " + JsonSerializer.Serialize(id));
 
             if (!ModelState.IsValid)
             {
@@ -76,7 +89,12 @@ namespace Serilog_JWT_Other.Controllers
             catch (Exception ex)
             {
                 var message = ex.Message;
+                _logger.LogError("Error Response Catch: " + JsonSerializer.Serialize(ex));
                 return BadRequest(message);
+            }
+            finally
+            {
+                _logger.LogInformation("GetAuthorById with HttpGet Finished ...");
             }
         }
 
@@ -85,6 +103,10 @@ namespace Serilog_JWT_Other.Controllers
 
         public IActionResult GetAuthorById(GetAuthorByIdRequestModel model)
         {
+
+            _logger.LogInformation("GetAuthorById with HttpPost executing ....");
+            _logger.LogInformation("Request: " + JsonSerializer.Serialize(model));
+
 
             if (!ModelState.IsValid)
             {
@@ -108,7 +130,12 @@ namespace Serilog_JWT_Other.Controllers
             catch (Exception ex)
             {
                 var message = ex.Message;
+                _logger.LogError("Error Response Catch: " + JsonSerializer.Serialize(ex));
                 return BadRequest(message);
+            }
+            finally
+            {
+                _logger.LogInformation("GetAuthorById with HttpPost Finished ...");
             }
         }
 
@@ -117,6 +144,8 @@ namespace Serilog_JWT_Other.Controllers
 
         public IActionResult GetAuthorList(GetAuthorListRequestModel model)
         {
+            _logger.LogInformation("GetAuthorList executing ....");
+            _logger.LogInformation("Request: " + JsonSerializer.Serialize(model));
 
             if (!ModelState.IsValid)
             {
@@ -140,7 +169,12 @@ namespace Serilog_JWT_Other.Controllers
             catch (Exception ex)
             {
                 var message = ex.Message;
+                _logger.LogError("Error Response Catch: " + JsonSerializer.Serialize(ex));
                 return BadRequest(message);
+            }
+            finally
+            {
+                _logger.LogInformation("GetAuthorList Finished ...");
             }
         }
 
@@ -149,6 +183,8 @@ namespace Serilog_JWT_Other.Controllers
 
         public IActionResult UpdateAuthorById(UpdateAuthorByIdRequestModel model)
         {
+            _logger.LogInformation("UpdateAuthorById executing ....");
+            _logger.LogInformation("Request: " + JsonSerializer.Serialize(model));
 
             if (!ModelState.IsValid)
             {
@@ -172,7 +208,12 @@ namespace Serilog_JWT_Other.Controllers
             catch (Exception ex)
             {
                 var message = ex.Message;
+                _logger.LogError("Error Response Catch: " + JsonSerializer.Serialize(ex));
                 return BadRequest(message);
+            }
+            finally
+            {
+                _logger.LogInformation("UpdateAuthorById Finished ...");
             }
         }
 
@@ -182,6 +223,8 @@ namespace Serilog_JWT_Other.Controllers
 
         public IActionResult DeleteAuthorById(DeleteAuthorByIdRequestModel model)
         {
+            _logger.LogInformation("DeleteAuthorById executing ....");
+            _logger.LogInformation("Request: " + JsonSerializer.Serialize(model));
 
             if (!ModelState.IsValid)
             {
@@ -205,7 +248,12 @@ namespace Serilog_JWT_Other.Controllers
             catch (Exception ex)
             {
                 var message = ex.Message;
+                _logger.LogError("Error Response Catch: " + JsonSerializer.Serialize(ex));
                 return BadRequest(message);
+            }
+            finally
+            {
+                _logger.LogInformation("DeleteAuthorById Finished ...");
             }
         }
     }

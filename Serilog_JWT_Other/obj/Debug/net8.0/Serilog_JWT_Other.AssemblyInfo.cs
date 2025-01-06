@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Serilog_JWT_Other")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d9c21aee160c616ce3fa8087809e9d23dfa552ca")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f5a69094faafad3012728df474f062956d3d0aaa")]
 [assembly: System.Reflection.AssemblyProductAttribute("Serilog_JWT_Other")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Serilog_JWT_Other")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -20,3 +20,85 @@
 2025-01-06 11:21:10.853 +08:00  INF  Request finished HTTP/2 GET https://localhost:7197/swagger/favicon-32x32.png - 499 628 image/png 5.1207ms
 2025-01-06 11:21:10.893 +08:00  INF  Request starting HTTP/2 GET https://localhost:7197/swagger/v1/swagger.json - null null
 2025-01-06 11:21:10.963 +08:00  INF  Request finished HTTP/2 GET https://localhost:7197/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 69.7032ms
+2025-01-06 11:23:20.676 +08:00  INF  Request starting HTTP/2 GET https://localhost:7197/api/Author/GetAuthorById?id=6c020cba-8e3a-4c70-a02a-07d9f6f5766d - null null
+2025-01-06 11:23:20.681 +08:00  INF  Executing endpoint 'Serilog_JWT_Other.Controllers.AuthorController.GetAuthorByIdHttpGet (Serilog_JWT_Other)'
+2025-01-06 11:23:20.697 +08:00  INF  Route matched with {action = "GetAuthorByIdHttpGet", controller = "Author"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAuthorByIdHttpGet(System.String) on controller Serilog_JWT_Other.Controllers.AuthorController (Serilog_JWT_Other).
+2025-01-06 11:23:21.084 +08:00  INF  Entity Framework Core 6.0.36 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None
+2025-01-06 11:23:21.428 +08:00  INF  Executed DbCommand (17ms) [Parameters=[@__model_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[Bio], [a].[CreatedDate], [a].[CreatedUserId], [a].[Name], [a].[RealName], [a].[UpdatedDate], [a].[UpdatedUserId]
+FROM [Authors] AS [a]
+WHERE [a].[Id] = @__model_Id_0
+2025-01-06 11:23:21.443 +08:00  INF  Executing OkObjectResult, writing value of type 'Serilog_JWT_Other.Models.Author.GetAuthorByIdResponseModel'.
+2025-01-06 11:23:21.451 +08:00  INF  Executed action Serilog_JWT_Other.Controllers.AuthorController.GetAuthorByIdHttpGet (Serilog_JWT_Other) in 749.6036ms
+2025-01-06 11:23:21.451 +08:00  INF  Executed endpoint 'Serilog_JWT_Other.Controllers.AuthorController.GetAuthorByIdHttpGet (Serilog_JWT_Other)'
+2025-01-06 11:23:21.454 +08:00  INF  Request finished HTTP/2 GET https://localhost:7197/api/Author/GetAuthorById?id=6c020cba-8e3a-4c70-a02a-07d9f6f5766d - 200 null application/json; charset=utf-8 777.953ms
+2025-01-06 11:23:39.493 +08:00  INF  Request starting HTTP/2 POST https://localhost:7197/api/Author/GetAuthorById - application/json 50
+2025-01-06 11:23:39.494 +08:00  INF  Executing endpoint 'Serilog_JWT_Other.Controllers.AuthorController.GetAuthorById (Serilog_JWT_Other)'
+2025-01-06 11:23:39.496 +08:00  INF  Route matched with {action = "GetAuthorById", controller = "Author"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAuthorById(Serilog_JWT_Other.Models.Author.GetAuthorByIdRequestModel) on controller Serilog_JWT_Other.Controllers.AuthorController (Serilog_JWT_Other).
+2025-01-06 11:23:39.512 +08:00  INF  Entity Framework Core 6.0.36 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None
+2025-01-06 11:23:39.516 +08:00  INF  Executed DbCommand (2ms) [Parameters=[@__model_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[Bio], [a].[CreatedDate], [a].[CreatedUserId], [a].[Name], [a].[RealName], [a].[UpdatedDate], [a].[UpdatedUserId]
+FROM [Authors] AS [a]
+WHERE [a].[Id] = @__model_Id_0
+2025-01-06 11:23:39.517 +08:00  INF  Executing OkObjectResult, writing value of type 'Serilog_JWT_Other.Models.Author.GetAuthorByIdResponseModel'.
+2025-01-06 11:23:39.517 +08:00  INF  Executed action Serilog_JWT_Other.Controllers.AuthorController.GetAuthorById (Serilog_JWT_Other) in 21.2379ms
+2025-01-06 11:23:39.517 +08:00  INF  Executed endpoint 'Serilog_JWT_Other.Controllers.AuthorController.GetAuthorById (Serilog_JWT_Other)'
+2025-01-06 11:23:39.517 +08:00  INF  Request finished HTTP/2 POST https://localhost:7197/api/Author/GetAuthorById - 200 null application/json; charset=utf-8 24.4635ms
+2025-01-06 11:23:41.023 +08:00  INF  Request starting HTTP/2 POST https://localhost:7197/api/Author/GetAuthorById - application/json 50
+2025-01-06 11:23:41.024 +08:00  INF  Executing endpoint 'Serilog_JWT_Other.Controllers.AuthorController.GetAuthorById (Serilog_JWT_Other)'
+2025-01-06 11:23:41.024 +08:00  INF  Route matched with {action = "GetAuthorById", controller = "Author"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAuthorById(Serilog_JWT_Other.Models.Author.GetAuthorByIdRequestModel) on controller Serilog_JWT_Other.Controllers.AuthorController (Serilog_JWT_Other).
+2025-01-06 11:23:41.060 +08:00  INF  Entity Framework Core 6.0.36 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None
+2025-01-06 11:23:41.062 +08:00  INF  Executed DbCommand (0ms) [Parameters=[@__model_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[Bio], [a].[CreatedDate], [a].[CreatedUserId], [a].[Name], [a].[RealName], [a].[UpdatedDate], [a].[UpdatedUserId]
+FROM [Authors] AS [a]
+WHERE [a].[Id] = @__model_Id_0
+2025-01-06 11:23:41.062 +08:00  INF  Executing OkObjectResult, writing value of type 'Serilog_JWT_Other.Models.Author.GetAuthorByIdResponseModel'.
+2025-01-06 11:23:41.062 +08:00  INF  Executed action Serilog_JWT_Other.Controllers.AuthorController.GetAuthorById (Serilog_JWT_Other) in 38.0087ms
+2025-01-06 11:23:41.062 +08:00  INF  Executed endpoint 'Serilog_JWT_Other.Controllers.AuthorController.GetAuthorById (Serilog_JWT_Other)'
+2025-01-06 11:23:41.062 +08:00  INF  Request finished HTTP/2 POST https://localhost:7197/api/Author/GetAuthorById - 200 null application/json; charset=utf-8 38.9445ms
+2025-01-06 14:35:17.849 +08:00  INF  Now listening on: https://localhost:7197
+2025-01-06 14:35:17.878 +08:00  INF  Now listening on: http://localhost:5122
+2025-01-06 14:35:17.936 +08:00  INF  Application started. Press Ctrl+C to shut down.
+2025-01-06 14:35:17.936 +08:00  INF  Hosting environment: Development
+2025-01-06 14:35:17.937 +08:00  INF  Content root path: C:\Users\User\source\repos\Serilog_JWT_Other\Serilog_JWT_Other
+2025-01-06 14:35:18.602 +08:00  INF  Request starting HTTP/2 GET https://localhost:7197/swagger/index.html - null null
+2025-01-06 14:35:18.805 +08:00  INF  Request finished HTTP/2 GET https://localhost:7197/swagger/index.html - 200 null text/html;charset=utf-8 208.308ms
+2025-01-06 14:35:18.848 +08:00  INF  Request starting HTTP/2 GET https://localhost:7197/_framework/aspnetcore-browser-refresh.js - null null
+2025-01-06 14:35:18.852 +08:00  INF  Request finished HTTP/2 GET https://localhost:7197/_framework/aspnetcore-browser-refresh.js - 200 13770 application/javascript; charset=utf-8 4.0071ms
+2025-01-06 14:35:18.857 +08:00  INF  Request starting HTTP/2 GET https://localhost:7197/_vs/browserLink - null null
+2025-01-06 14:35:18.902 +08:00  INF  Request finished HTTP/2 GET https://localhost:7197/_vs/browserLink - 200 null text/javascript; charset=UTF-8 45.6449ms
+2025-01-06 14:35:19.019 +08:00  INF  Request starting HTTP/2 GET https://localhost:7197/swagger/favicon-32x32.png - null null
+2025-01-06 14:35:19.032 +08:00  INF  Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2025-01-06 14:35:19.032 +08:00  INF  Request finished HTTP/2 GET https://localhost:7197/swagger/favicon-32x32.png - 499 628 image/png 13.353ms
+2025-01-06 14:35:19.061 +08:00  INF  Request starting HTTP/2 GET https://localhost:7197/swagger/v1/swagger.json - null null
+2025-01-06 14:35:19.153 +08:00  INF  Request finished HTTP/2 GET https://localhost:7197/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 92.7456ms
+2025-01-06 14:40:10.773 +08:00  INF  Request starting HTTP/2 GET https://localhost:7197/api/Author/GetAuthorById?id=05b7846a-f634-4c2f-80bc-6802d9f562d9 - null null
+2025-01-06 14:40:10.783 +08:00  INF  Executing endpoint 'Serilog_JWT_Other.Controllers.AuthorController.GetAuthorByIdHttpGet (Serilog_JWT_Other)'
+2025-01-06 14:40:10.831 +08:00  INF  Route matched with {action = "GetAuthorByIdHttpGet", controller = "Author"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAuthorByIdHttpGet(System.String) on controller Serilog_JWT_Other.Controllers.AuthorController (Serilog_JWT_Other).
+2025-01-06 14:40:11.170 +08:00  INF  GetAuthorById with HttpGet executing ....
+2025-01-06 14:40:11.173 +08:00  INF  Request: "05b7846a-f634-4c2f-80bc-6802d9f562d9"
+2025-01-06 14:40:11.690 +08:00  INF  Entity Framework Core 6.0.36 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None
+2025-01-06 14:40:12.351 +08:00  INF  Executed DbCommand (31ms) [Parameters=[@__model_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[Bio], [a].[CreatedDate], [a].[CreatedUserId], [a].[Name], [a].[RealName], [a].[UpdatedDate], [a].[UpdatedUserId]
+FROM [Authors] AS [a]
+WHERE [a].[Id] = @__model_Id_0
+2025-01-06 14:40:12.374 +08:00  INF  GetAuthorById with HttpGet Finished ...
+2025-01-06 14:40:12.378 +08:00  INF  Executing OkObjectResult, writing value of type 'Serilog_JWT_Other.Models.Author.GetAuthorByIdResponseModel'.
+2025-01-06 14:40:12.386 +08:00  INF  Executed action Serilog_JWT_Other.Controllers.AuthorController.GetAuthorByIdHttpGet (Serilog_JWT_Other) in 1549.9849ms
+2025-01-06 14:40:12.386 +08:00  INF  Executed endpoint 'Serilog_JWT_Other.Controllers.AuthorController.GetAuthorByIdHttpGet (Serilog_JWT_Other)'
+2025-01-06 14:40:12.392 +08:00  INF  Request finished HTTP/2 GET https://localhost:7197/api/Author/GetAuthorById?id=05b7846a-f634-4c2f-80bc-6802d9f562d9 - 200 null application/json; charset=utf-8 1618.9114ms
+2025-01-06 15:15:34.759 +08:00  INF  Request starting HTTP/2 POST https://localhost:7197/api/Author/CreateAuthor - application/json 82
+2025-01-06 15:15:34.761 +08:00  INF  Executing endpoint 'Serilog_JWT_Other.Controllers.AuthorController.CreateAuthor (Serilog_JWT_Other)'
+2025-01-06 15:15:34.764 +08:00  INF  Route matched with {action = "CreateAuthor", controller = "Author"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult CreateAuthor(Serilog_JWT_Other.Models.Author.CreateAuthorRequestModel) on controller Serilog_JWT_Other.Controllers.AuthorController (Serilog_JWT_Other).
+2025-01-06 15:15:34.787 +08:00  INF  CreateAuthor executing ....
+2025-01-06 15:15:34.788 +08:00  INF  Request: {"Name":"J.K. Rowling","RealName":"Joanne Rowling","Bio":"born 1965"}
+2025-01-06 15:15:34.805 +08:00  INF  Entity Framework Core 6.0.36 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None
+2025-01-06 15:15:34.975 +08:00  INF  Executed DbCommand (8ms) [Parameters=[@p0='?' (Size = 450), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (DbType = DateTime2), @p7='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Authors] ([Id], [Bio], [CreatedDate], [CreatedUserId], [Name], [RealName], [UpdatedDate], [UpdatedUserId])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+2025-01-06 15:15:34.989 +08:00  INF  CreateAuthor Finished ...
+2025-01-06 15:15:34.989 +08:00  INF  Executing OkObjectResult, writing value of type 'Serilog_JWT_Other.Models.Author.CreateAuthorResponseModel'.
+2025-01-06 15:15:34.990 +08:00  INF  Executed action Serilog_JWT_Other.Controllers.AuthorController.CreateAuthor (Serilog_JWT_Other) in 226.1098ms
+2025-01-06 15:15:34.990 +08:00  INF  Executed endpoint 'Serilog_JWT_Other.Controllers.AuthorController.CreateAuthor (Serilog_JWT_Other)'
+2025-01-06 15:15:34.991 +08:00  INF  Request finished HTTP/2 POST https://localhost:7197/api/Author/CreateAuthor - 200 null application/json; charset=utf-8 232.1991ms
