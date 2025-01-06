@@ -1,5 +1,101 @@
 [
   {
+    "ContainingType": "Serilog_JWT_Other.Controllers.AuthorController",
+    "Method": "CreateAuthor",
+    "RelativePath": "api/Author/CreateAuthor",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "Serilog_JWT_Other.Models.Author.CreateAuthorRequestModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Serilog_JWT_Other.Controllers.AuthorController",
+    "Method": "DeleteAuthorById",
+    "RelativePath": "api/Author/DeleteAuthorById",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "Serilog_JWT_Other.Models.Author.DeleteAuthorByIdRequestModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Serilog_JWT_Other.Controllers.AuthorController",
+    "Method": "GetAuthorByIdHttpGet",
+    "RelativePath": "api/Author/GetAuthorById",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Serilog_JWT_Other.Controllers.AuthorController",
+    "Method": "GetAuthorById",
+    "RelativePath": "api/Author/GetAuthorById",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "Serilog_JWT_Other.Models.Author.GetAuthorByIdRequestModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Serilog_JWT_Other.Controllers.AuthorController",
+    "Method": "GetAuthorList",
+    "RelativePath": "api/Author/GetAuthorList",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "Serilog_JWT_Other.Models.Author.GetAuthorListRequestModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Serilog_JWT_Other.Controllers.AuthorController",
+    "Method": "UpdateAuthorById",
+    "RelativePath": "api/Author/UpdateAuthorById",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "Serilog_JWT_Other.Models.Author.UpdateAuthorByIdRequestModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "Serilog_JWT_Other.Controllers.WeatherForecastController",
     "Method": "Get",
     "RelativePath": "WeatherForecast",

@@ -1,4 +1,7 @@
+using Microsoft.EntityFrameworkCore;
 using Serilog;
+using Serilog_JWT_Other.Data;
+using Serilog_JWT_Other.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -11,6 +14,10 @@ var logger = new LoggerConfiguration()
 builder.Logging.ClearProviders();
 builder.Logging.AddSerilog(logger);
 
+builder.Services.AddDbContext<AppDbContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+builder.Services.AddTransient<AuthorService>();
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
