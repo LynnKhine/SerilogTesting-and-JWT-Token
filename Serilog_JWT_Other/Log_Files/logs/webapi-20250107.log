@@ -1,0 +1,21 @@
+2025-01-07 23:34:44.025 +08:00  INF  Now listening on: https://localhost:7197
+2025-01-07 23:34:44.047 +08:00  INF  Now listening on: http://localhost:5122
+2025-01-07 23:34:44.083 +08:00  INF  Application started. Press Ctrl+C to shut down.
+2025-01-07 23:34:44.084 +08:00  INF  Hosting environment: Development
+2025-01-07 23:34:44.084 +08:00  INF  Content root path: C:\Users\User\source\repos\Serilog_JWT_Other\Serilog_JWT_Other
+2025-01-07 23:34:44.634 +08:00  INF  Request starting HTTP/2 GET https://localhost:7197/swagger - null null
+2025-01-07 23:34:44.634 +08:00  INF  Request starting HTTP/2 GET https://localhost:7197/swagger/index.html - null null
+2025-01-07 23:34:44.764 +08:00  INF  Request finished HTTP/2 GET https://localhost:7197/swagger - 499 null null 134.4278ms
+2025-01-07 23:34:44.807 +08:00  INF  Request finished HTTP/2 GET https://localhost:7197/swagger/index.html - 200 null text/html;charset=utf-8 178.4017ms
+2025-01-07 23:34:44.828 +08:00  INF  Request starting HTTP/2 GET https://localhost:7197/swagger/swagger-ui-standalone-preset.js - null null
+2025-01-07 23:34:44.828 +08:00  INF  Request starting HTTP/2 GET https://localhost:7197/_framework/aspnetcore-browser-refresh.js - null null
+2025-01-07 23:34:44.828 +08:00  INF  Request starting HTTP/2 GET https://localhost:7197/_vs/browserLink - null null
+2025-01-07 23:34:44.834 +08:00  INF  Request finished HTTP/2 GET https://localhost:7197/_framework/aspnetcore-browser-refresh.js - 200 13770 application/javascript; charset=utf-8 6.2365ms
+2025-01-07 23:34:44.845 +08:00  INF  Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2025-01-07 23:34:44.845 +08:00  INF  Request finished HTTP/2 GET https://localhost:7197/swagger/swagger-ui-standalone-preset.js - 499 230280 text/javascript 17.7818ms
+2025-01-07 23:34:44.876 +08:00  INF  Request finished HTTP/2 GET https://localhost:7197/_vs/browserLink - 200 null text/javascript; charset=UTF-8 48.9383ms
+2025-01-07 23:34:44.963 +08:00  INF  Request starting HTTP/2 GET https://localhost:7197/swagger/favicon-32x32.png - null null
+2025-01-07 23:34:44.964 +08:00  INF  Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2025-01-07 23:34:44.964 +08:00  INF  Request finished HTTP/2 GET https://localhost:7197/swagger/favicon-32x32.png - 499 628 image/png 1.4475ms
+2025-01-07 23:34:44.996 +08:00  INF  Request starting HTTP/2 GET https://localhost:7197/swagger/v1/swagger.json - null null
+2025-01-07 23:34:45.079 +08:00  INF  Request finished HTTP/2 GET https://localhost:7197/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 83.7876ms
