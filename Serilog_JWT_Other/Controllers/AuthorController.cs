@@ -2,6 +2,7 @@
 using Serilog_JWT_Other.Models.Author;
 using Serilog_JWT_Other.Services;
 using System.Text.Json;
+using Serilog_JWT_Other.Entities;
 
 namespace Serilog_JWT_Other.Controllers
 {
